@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using WebAdvert.Web.Configuration;
 
 namespace WebAdvert.Web
 {
@@ -35,6 +36,7 @@ namespace WebAdvert.Web
         RequireUppercase = false
         };
       });
+      services.Configure<AWSConfiguration>(Configuration.GetSection("AWS"));
       services.ConfigureApplicationCookie(options =>
       {
         options.LoginPath = "/Accounts/Login";
