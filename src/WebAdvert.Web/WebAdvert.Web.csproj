@@ -1,11 +1,15 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk.Web">
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <UserSecretsId>b5bf45c9-a252-4fdc-9047-fa6cf365cd60</UserSecretsId>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Amazon.AspNetCore.Identity.Cognito" Version="1.0.5" />
-    <PackageReference Include="Amazon.Extensions.CognitoAuthentication" Version="1.0.4" />
+    <PackageReference Include="Amazon.AspNetCore.Identity.Cognito" Version="1.0.5"/>
+    <PackageReference Include="Amazon.Extensions.CognitoAuthentication" Version="1.0.4"/>
+    <PackageReference Include="AWSSDK.S3" Version="3.3.31.8"/>
+    <PackageReference Include="AdvertApi.Messages" Version="1.0.0"/>
+    <PackageReference Include="Microsoft.Extensions.Http" Version="3.1.8"/>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.0.1"/>
+    <PackageReference Include="Microsoft.Extensions.Http.Polly" Version="3.1.8"/>
   </ItemGroup>
 </Project>
